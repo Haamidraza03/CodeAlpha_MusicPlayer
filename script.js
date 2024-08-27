@@ -7,7 +7,7 @@ const searchButton = document.getElementById('search-button');
 
         searchButton.addEventListener('click', () => {
             const query = searchInput.value;
-            fetch(`https://v1.nocodeapi.com/hrk03/spotify/ehLyDzBzsZoUBvUH/search?q=${encodeURIComponent(query)}&type=track`)
+            fetch(`https://v1.nocodeapi.com/thehrk03/spotify/ZKqWRIiwkFjDeQCJ/search?q=${encodeURIComponent(query)}&type=track`)
                 .then(response => response.json())
                 .then(data => {
                     searchResults.innerHTML = '';
